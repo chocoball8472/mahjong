@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>麻雀</title>
+    <style>
+      #wrapper {
+        position: relative;
+        width: 800px;
+        margin: 0 auto 0;
+      }
+
+      #canvas {
+        background-color: #33FF00;
+      }
+
+      #panel {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <canvas id="canvas" width="800" height="800"></canvas>
+      <div>
+        <canvas id="panel" width="800" height="150"></canvas>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./js/setting.js"></script>
+    <script type="text/javascript" src="./js/information.js"></script>
+    <script type="text/javascript" src="./js/panel.js"></script>
+    <script type="text/javascript" src="./js/calculation.js"></script>
+    <script type="text/javascript" src="./js/screen.js"></script>
+    <script type="text/javascript" src="./js/client.js"></script>
+  </body>
+</html>
