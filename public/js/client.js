@@ -1,4 +1,6 @@
-const socket = io();                                //socket.io接続
+const socket = io(location.origin, {
+  transports: ['websocket'],
+});                                //socket.io接続
 
 const canvas = document.getElementById("canvas");   //canvas要素の取得
 const context = canvas.getContext("2d");             //2dcontextの取得

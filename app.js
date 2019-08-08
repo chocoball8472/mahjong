@@ -6,7 +6,9 @@ const Game = require('./server/game.js');
 //オブジェクト
 const app = express();
 const server = http.createServer(app);
-const io = require('socket.io').listen(server);
+const io = require('socket.io').listen(server, {
+  transports: ['websocket'],
+});
 
 const port = process.env.PORT || 3000;            //ポート番号
 
